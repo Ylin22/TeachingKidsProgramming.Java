@@ -12,7 +12,7 @@ public class DigiFlower
   {
     Tortoise.show();
     Tortoise.setSpeed(10);
-    //    Make the background silver --#8
+    Tortoise.getBackgroundWindow().setBackground(Colors.Grays.Silver);
     Tortoise.setPenWidth(3);
     //    createColorPalette (recipe below) --#9
     for (int i = 1; i <= 15; i++)
