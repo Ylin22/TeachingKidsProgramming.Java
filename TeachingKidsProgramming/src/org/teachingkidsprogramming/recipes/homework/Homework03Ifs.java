@@ -2,9 +2,7 @@ package org.teachingkidsprogramming.recipes.homework;
 
 import junit.framework.Assert;
 
-import org.junit.Ignore;
 import org.junit.Test;
-
 
 public class Homework03Ifs
 {
@@ -23,7 +21,7 @@ public class Homework03Ifs
     String bearPoopPlace = "";
     if (true)
     {
-      bearPoopPlace = ___;
+      bearPoopPlace = "woods";
     }
     Assert.assertEquals("woods", bearPoopPlace);
   }
@@ -35,13 +33,13 @@ public class Homework03Ifs
     {
       dessert = "ketchup";
     }
-    Assert.assertEquals(___, dessert);
+    Assert.assertEquals("chocolate", dessert);
   }
   @Test
   public void notEverEverEver() throws Exception
   {
     String dessert = "chocolate";
-    if (!_____)
+    if (!true)
     {
       dessert = "ketchup";
     }
@@ -51,7 +49,7 @@ public class Homework03Ifs
   public void isThePopeCatholic() throws Exception
   {
     String pope = "";
-    if (_____)
+    if (true)
     {
       pope = "Catholic";
     }
@@ -61,7 +59,7 @@ public class Homework03Ifs
   public void trueOrFalse() throws Exception
   {
     String animal = "cat";
-    boolean elephant = _____;
+    boolean elephant = true;
     if (elephant)
     {
       animal = "flat " + animal;
@@ -72,7 +70,7 @@ public class Homework03Ifs
   public void letSleepingBabiesLie() throws Exception
   {
     String babySounds = "";
-    boolean sleeping = ______;
+    boolean sleeping = false;
     if (sleeping)
     {
       babySounds = "zzzzzzzzzzzz";
@@ -87,7 +85,7 @@ public class Homework03Ifs
   public void howCoachThinks() throws Exception
   {
     String coachSays = "try harder";
-    int percentEffort = ____;
+    int percentEffort = 110;
     if (percentEffort == 110)
     {
       coachSays = "good job";
@@ -98,7 +96,7 @@ public class Homework03Ifs
   public void lessThan() throws Exception
   {
     String modeOfTransportation = "";
-    int age = ____;
+    int age = 15;
     if (age < 16)
     {
       modeOfTransportation = "keep walking";
@@ -113,7 +111,7 @@ public class Homework03Ifs
   public void greaterThan() throws Exception
   {
     String kidSays = "";
-    int numberOfIceCreams = ____;
+    int numberOfIceCreams = 5;
     if (numberOfIceCreams > 4)
     {
       kidSays = "I think I'm gonna barf";
@@ -128,7 +126,7 @@ public class Homework03Ifs
   public void notEqual() throws Exception
   {
     String playerSays = "";
-    int cards = ____;
+    int cards = 52;
     if (cards != 52)
     {
       playerSays = "Not playing with a full deck!";
@@ -143,7 +141,7 @@ public class Homework03Ifs
   public void equalsForStrings() throws Exception
   {
     String knockKnock = "";
-    String whosThere = ___;
+    String whosThere = "bananas";
     if (whosThere.equals("bananas"))
     {
       knockKnock = "Who's there?";
@@ -158,8 +156,8 @@ public class Homework03Ifs
   public void thisAndThat() throws Exception
   {
     String time = "";
-    int score = ____;
-    int years = ____;
+    int score = 4;
+    int years = 7;
     if (score == 4 && years == 7)
     {
       time = "Presidential";
@@ -170,7 +168,7 @@ public class Homework03Ifs
   public void theBeginningOrEnd() throws Exception
   {
     String shoppingList = "";
-    int age = ____;
+    int age = 2;
     if (age <= 2 || 90 <= age)
     {
       shoppingList = "diapers";
@@ -181,7 +179,7 @@ public class Homework03Ifs
   public void ifInHighSchool() throws Exception
   {
     String status = "";
-    int age = ____;
+    int age = 18;
     if (age <= 15)
     {
       status = "smarty";
@@ -201,7 +199,7 @@ public class Homework03Ifs
   {
     String status = "";
     String animal = "PIG";
-    boolean isWinningKarate = ______;
+    boolean isWinningKarate = false;
     if (animal.equalsIgnoreCase("pig"))
     {
       if (isWinningKarate)
