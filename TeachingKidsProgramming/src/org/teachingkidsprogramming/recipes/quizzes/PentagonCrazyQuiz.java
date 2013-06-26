@@ -13,6 +13,9 @@ public class PentagonCrazyQuiz extends PentagonCrazyQuizGrader
     //        Do the following 76 times
     //        Quiz.Stitch()
     //        Repeat
+    for (int i = 1; i <= 76; i++)
+    {
+    }
   }
   public void question3()
   {
