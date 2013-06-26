@@ -9,33 +9,36 @@ public class PentagonCrazy
   public static void main(String[] args)
   {
     Tortoise.setSpeed(10);
-    //    createColorPalette (recipe below) --#8
-    //    ------------- Recipe for createColorPalette --#8
-    ColorWheel.addColor(Colors.Blues.SteelBlue);
-    ColorWheel.addColor(Colors.Purples.DarkOrchid);
-    ColorWheel.addColor(Colors.Blues.DarkSlateBlue);
-    ColorWheel.addColor(Colors.Blues.Teal);
-    ColorWheel.addColor(Colors.Purples.Indigo);
-    //    ------------- End of createColorPalette recipe 
-    //    DrawPentagon (recipe below) --#10
-    //    ------------- Recipe for drawPentagon --#10
+    createColorPalette();
+    drawPentagon();
+  }
+  private static void drawPentagon()
+  {
     for (int i = 1; i <= 200; i++)
     {
-      //        AdjustPen (recipe below) --#9
-      //        ------------- Recipe for adjustPen --#9
-      Tortoise.setPenColor(ColorWheel.getNextColor());
-      int penWidth = Tortoise.getPenWidth();
-      Tortoise.setPenWidth(penWidth + 1);
-      if (penWidth > 4)
-      {
-        Tortoise.setPenWidth(1);
-      }
-      //        ------------- End of adjustPen recipe 
+      adjustPen();
       int sideLength = 100;
       Tortoise.move(sideLength);
       Tortoise.turn(360 / 5);
       Tortoise.turn(1);
     }
-    //    ------------- End of drawPentagon recipe
+  }
+  private static void adjustPen()
+  {
+    Tortoise.setPenColor(ColorWheel.getNextColor());
+    int penWidth = Tortoise.getPenWidth();
+    Tortoise.setPenWidth(penWidth + 1);
+    if (penWidth > 4)
+    {
+      Tortoise.setPenWidth(1);
+    }
+  }
+  private static void createColorPalette()
+  {
+    ColorWheel.addColor(Colors.Blues.SteelBlue);
+    ColorWheel.addColor(Colors.Purples.DarkOrchid);
+    ColorWheel.addColor(Colors.Blues.DarkSlateBlue);
+    ColorWheel.addColor(Colors.Blues.Teal);
+    ColorWheel.addColor(Colors.Purples.Indigo);
   }
 }

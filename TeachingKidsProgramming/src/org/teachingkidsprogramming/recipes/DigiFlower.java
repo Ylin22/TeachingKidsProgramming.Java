@@ -14,13 +14,24 @@ public class DigiFlower
     Tortoise.setSpeed(10);
     Tortoise.getBackgroundWindow().setBackground(Colors.Grays.Silver);
     Tortoise.setPenWidth(3);
-    //    createColorPalette (recipe below) --#9
     for (int i = 1; i <= 15; i++)
     {
       Tortoise.turn(360 / 15);
     }
-    //      drawOctogon (recipe below) --#10
-    //    ------------- Recipe for createColorPalette --#9
+    createColorPalette();
+    drawOctagon();
+  }
+  private static void drawOctagon()
+  {
+    for (int i = 1; i <= 8; i++)
+    {
+      Tortoise.setPenColor(ColorWheel.getNextColor());
+      Tortoise.move(50);
+      Tortoise.turn(360 / 8);
+    }
+  }
+  private static void createColorPalette()
+  {
     Color Color1 = Colors.Reds.Red;
     Color Color2 = Colors.Oranges.DarkOrange;
     Color Color3 = Colors.Yellows.Gold;
@@ -33,12 +44,5 @@ public class DigiFlower
     ColorWheel.addColor(Color3);
     ColorWheel.addColor(Color2);
     ColorWheel.addColor(Color1);
-    //    ------------- Recipe for drawOctogon --#10
-    for (int i = 1; i <= 8; i++)
-    {
-      Tortoise.setPenColor(ColorWheel.getNextColor());
-      Tortoise.move(50);
-      Tortoise.turn(360 / 8);
-    }
   }
 }
