@@ -17,9 +17,9 @@ public class DigiFlower
     for (int i = 1; i <= 15; i++)
     {
       Tortoise.turn(360 / 15);
+      createColorPalette();
+      drawOctagon();
     }
-    createColorPalette();
-    drawOctagon();
   }
   private static void drawOctagon()
   {
